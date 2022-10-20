@@ -12,19 +12,19 @@ public class UserController    {
         return "Creating user...";             
     }
     
-    @GetMapping("/users/v1/")
+    @GetMapping("/users/v2/")
     @ResponseBody
     public String read(Object o) {
         return "Sharing user...";             
     }
     
-    @PutMapping("/users/v1/")
+    @PutMapping("/users/v3/")
     @ResponseBody
     public String edit(Object o) {
         return "Updating...";             
     }
     
-    @DelMapping("/users/v1/")
+    @DelMapping("/users/v4/")
     @ResponseBody
     public String delete(Object o) {
         return "Deleting user...";             

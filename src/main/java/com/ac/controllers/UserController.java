@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/users")
+//esse controller carrega todas requisiçoes que começar com "/users"
 public class UserController    {
     
     @PostMapping("/v1")

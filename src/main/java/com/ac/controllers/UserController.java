@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.RestController;
 //esse controller carrega todas requisiçoes que começar com "/users"
 public class UserController    {
     
-    @PostMapping("/v1")
+    @PostMapping()
     //@RequestMapping(value = /users/v1, method = RequestMethod.POST) 
     public String create(Object o) {
         return "Creating user...";             
     }
     
-    @GetMapping("/v2")
+    @GetMapping({id})
     //@RequestMapping(value = /users/v1, method = RequestMethod.GET)
     public String read(Object o) {
         return "Sharing user...";             
     }
     
-    @PutMapping("/v3")
+    @PutMapping({id})
     //@RequestMapping(value = /users/v1, method = RequestMethod.PUT)
     public String edit(Object o) {
         return "Updating...";             
     }
     
-    @DelMapping("/v4")
+    @DelMapping({id})
     //@RequestMapping(value = /users/v1, method = RequestMethod.DELETE)
     public String delete(Object o) {
         return "Deleting user...";             

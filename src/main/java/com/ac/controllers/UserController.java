@@ -1,37 +1,41 @@
 package com.ac.controllers;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+
+
 @RestController
+@RequestMapping("/users/v1")
 public class UserController    {
     
-    
-
-    @PostMapping("/USERS_V1/")
+ 
+    @PostMapping("/create")
     public String create(Object o) {
         return "Creating user...";             
     }
    
-      @RequestMapping("/USERS_V2/")
-    public String read(Object o) {
+    @GetMapping("/read")
+    public String read(Object o)  {
         return "Sharing user...";             
     }
     
-     @PutMapping("/users/v3/")
+    @PutMapping("/edit")
     public String edit(Object o) {
         return "Updating...";             
     }
     
-    @DeleteMapping("/users/v4/")
+    @DeleteMapping("/delete")
     public String delete(Object o) {
         return "Deleting user...";             
     }
 
         
 
-    //localhost:8080/pong/Everson
+    //localhost:8080/
 }

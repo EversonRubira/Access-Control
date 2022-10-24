@@ -1,0 +1,9 @@
+2022-10-24 17:21:10 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select * from users [42102-200]
+2022-10-24 17:21:17 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select * from users [42102-200]
+2022-10-24 17:21:19 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found; SQL statement:
+select * from users [42102-200]
